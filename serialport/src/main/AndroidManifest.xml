@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-    package="android_serialport_api">
+    package="android.serialport.api">
 
     <application
         android:allowBackup="true"

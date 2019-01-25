@@ -4,7 +4,7 @@ android {
     compileSdkVersion 23
 
     defaultConfig {
-        applicationId "android_serialport_api.sample"
+        applicationId "android.serialport.api.sample"
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1

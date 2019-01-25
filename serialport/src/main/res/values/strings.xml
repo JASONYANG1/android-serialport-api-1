@@ -5,9 +5,9 @@
     <string name="about_msg">
 Serial Port API sample v1.1\n
 \n
-This program is the sample application provided with project android-serialport-api.\n
+This program is the sample application provided with project android-serialport-android.serialport.api.\n
 \n
-More information and bug report on [http://code.google.com/p/android-serialport-api]\n
+More information and bug report on [http://code.google.com/p/android-serialport-android.serialport.api]\n
 \n
 Copyright 2010-2011 Cedric Priscal\n
 \n

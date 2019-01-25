@@ -14,7 +14,7 @@
  * limitations under the License. 
  */
 
-package android_serialport_api.sample;
+package android.serialport.api.sample;
 
 import android.app.Activity;
 import android.app.AlertDialog;

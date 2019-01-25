@@ -14,11 +14,14 @@
  * limitations under the License. 
  */
 
-package android_serialport_api.sample;
+package android.serialport.api.sample;
 
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.util.Arrays;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -58,10 +61,12 @@ public class ConsoleActivity extends SerialPortActivity {
 
 	@Override
 	protected void onDataReceived(final byte[] buffer, final int size) {
+		byte[] data = Arrays.copyOf(buffer,size);
+		Log.d("onDataReceived","data:"+new String(data));
 		runOnUiThread(new Runnable() {
 			public void run() {
 				if (mReception != null) {
-					mReception.append(new String(buffer, 0, size));
+					mReception.append(new String(buffer, 0, size, Charset.defaultCharset()));
 				}
 			}
 		});
