@@ -62,7 +62,8 @@ public class ConsoleActivity extends SerialPortActivity {
 	@Override
 	protected void onDataReceived(final byte[] buffer, final int size) {
 		byte[] data = Arrays.copyOf(buffer,size);
-		Log.d("onDataReceived","data:"+new String(data));
+		Log.d("onDataReceived","size:"+size);
+		Log.d("onDataReceived","data:"+StringUtils.bytesToHex1(data));
 		runOnUiThread(new Runnable() {
 			public void run() {
 				if (mReception != null) {
